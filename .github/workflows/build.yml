@@ -15,4 +15,5 @@ jobs:
         #ls -l
         cmake -p cmake-build-debug -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" $PWD
         cmake --build . --target CppGitHubCICDByExample
-
+        ls -l
+        ./CppGitHubCICDByExample
