@@ -14,4 +14,4 @@ jobs:
         echo $PWD
         cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles"
         echo $PWD
-        cmake build CppGitHubCICDByExample --target CppGitHubCICDByExample
+        cmake --target CppGitHubCICDByExample
