@@ -11,6 +11,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: build project with debug flags
       run: |
-        mkdir cmake-build-debug
         cmake -DCMAKE_BUILD_TYPE=Debug
-        cmake --build cmake-build-debug --target CppGitHubCICDByExample -- -j$(nproc)
+        cmake --target CppGitHubCICDByExample -- -j$(nproc)
