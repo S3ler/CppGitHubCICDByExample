@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# CMakee
+cmake-build-*
+
+# Intellj
+.idea/
