@@ -11,5 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: build project with debug flags
       run: |
-        cmake -DCMAKE_BUILD_TYPE=Debug
-        cmake --target CppGitHubCICDByExample -- -j$(nproc)
+        echo $PWD
+        cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles"
+        echo $PWD
+        cmake build . --target CppGitHubCICDByExample -- -j $(nproc)
