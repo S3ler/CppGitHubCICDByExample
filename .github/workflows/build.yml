@@ -15,7 +15,7 @@ jobs:
         ls -l
         mkdir cmake-build-debug
         #cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles"
-        cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" cmake-build-debug
+        cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" $PWD/cmake-build-debug
         echo $PWD
         ls -l
         cmake --build cmake-build-debug --target CppGitHubCICDByExample
